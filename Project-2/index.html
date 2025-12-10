@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Three Ways to Find a Student</h1>
+
+    <div class="info">
+      <b>Activity Goal:</b><br>
+      Try all three approaches for the SAME roll number.<br>
+      Observe which takes more steps, feels tiring, or scales better.
+    </div>
+
+    <div class="input-group">
+      <input type="number" id="rollInput" placeholder="Enter Roll Number (1–50)">
+      <select id="approach">
+        <option value="linear">Approach 1: One-by-One</option>
+        <option value="smart">Approach 2: My Smart Logic</option>
+        <option value="binary">Approach 3: Middle-Jump Logic</option>
+      </select>
+    </div>
+
+    <button onclick="findStudent()">Find Student</button>
+
+    <div id="strategyBox" class="strategy-box hidden">
+      <h3>Your Strategy (Approach 2)</h3>
+      <textarea id="studentStrategy" placeholder="Write your logic in steps..."></textarea>
+      <input type="number" id="estimatedSteps" placeholder="Estimated Steps">
+    </div>
+
+    <div class="result" id="resultBox"></div>
+    <div class="steps" id="stepsBox"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

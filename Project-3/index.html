@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Three Ways to Find a Student</title>    
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Three Ways to Find a Student</h1>
+
+  <div class="info">
+    <b>Activity — Evaluative Thinking</b><br>
+    Search the Student who secured X Marks using different methods, watch the steps, and choose which one is better.
+  </div>
+  <div class="wrapper">
+
+      <div class="input-group">
+          <input type="number" id="rollInput" placeholder="Enter Roll (1–50)">
+          <select id="approach">
+              <option value="linear">Approach 1: One-by-One</option>
+              <option value="smart">Approach 2: My Smart Logic</option>
+              <option value="binary">Approach 3: Middle-Jump Logic</option>
+            </select>
+        </div>
+        <div class="list">
+            <h3>Student List (Live View)</h3>
+            <div id="studentList" class="student-list"></div>
+          </div>
+    </div>
+
+  <button onclick="findStudent()">Find Student</button>
+  <!-- <button onclick="shuffleData()">🔄 Shuffle Student Order</button> -->
+
+  <!-- <div id="strategyBox" class="strategy-box hidden">
+    <h3>Your Strategy (Approach 2)</h3>
+    <textarea id="studentStrategy"></textarea>
+    <input type="number" id="estimatedSteps" placeholder="Estimated Steps">
+  </div> -->
+  <div id="strategyBox" class="strategy-box hidden">
+  <b>Approach 2 — Guessing Rule</b><br><br>
+  Whatever roll number you enter,  
+  <u>note it down in your notebook</u>  
+  until you find the student with the required marks.
+  </div>
+
+  <div class="result" id="resultBox"></div>
+  <div class="steps" id="stepsBox"></div>
+</div>
+
+<!-- <script src="index.js"></script> -->
+<script src="server.js"></script>
+
+
+</body>
+</html>
